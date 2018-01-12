@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MOBILE MAP BPKP</string>
+    <string name="login_screen_title">Aplikasi Mobile\nProfil Pegawai\nBPKP</string>
+    <string name="title_activity_dashboard">Beranda</string>
+
+    <string name="navigation_drawer_open">Buka laci navigasi</string>
+    <string name="navigation_drawer_close">Tutup laci navigasi</string>
+
+    <string name="action_help">Bantuan</string>
+</resources>

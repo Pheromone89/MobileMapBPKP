@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/navigation_drawer_personal"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_man"
+            android:title="Profli" />
+    </group>
+    <group
+        android:id="@+id/navigation_drawer_module"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_izin_cuti"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Izin Cuti" />
+        <item
+            android:id="@+id/nav_tugas_belajar"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Tugas Belajar" />
+        <item
+            android:id="@+id/nav_izin_belajar"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Izin Belajar" />
+        <item
+            android:id="@+id/nav_izin_kantor"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Izin Kantor" />
+        <item
+            android:id="@+id/nav_izin_luar_negeri"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Izin Luar Negeri" />
+        <item
+            android:id="@+id/nav_surat_keluar"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Surat Keluar" />
+    </group>
+    <group
+        android:id="@+id/navigation_drawer_settings"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Pengaturan" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="Logout" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Import" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Slideshow" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
