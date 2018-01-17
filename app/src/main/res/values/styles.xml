@@ -14,6 +14,13 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="NavigationDrawerTextActive" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/blueBasicDark</item>
+    </style>
+    <style name="NavigationDrawerTextInactive" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">@color/blueBasic</item>
+    </style>
+
     <style name="NOActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
@@ -28,7 +35,9 @@
         <item name="android:src">@drawable/help_icon</item>
     </style>
 
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style
+        name="AppTheme.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 

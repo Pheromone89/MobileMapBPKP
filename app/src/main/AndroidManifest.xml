@@ -14,7 +14,8 @@
         <activity
             android:name=".SplashscreenActivity"
             android:noHistory="true"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:theme="@style/NOActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +29,8 @@
             android:name=".DashboardActivity"
             android:label="@string/title_activity_dashboard"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".TestActivity" />
+        <activity android:name=".ProfilPegawaiIndividuActivity"></activity>
     </application>
 
 </manifest>

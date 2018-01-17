@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blueBasic"
+    android:orientation="vertical"
+    tools:context="id.go.bpkp.mobilemapbpkp.ProfilPegawaiIndividuActivity">
+
+    <LinearLayout
+        android:id="@+id/profic_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/blueBasicPale"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:elevation="12dp"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9"
+            app:cardCornerRadius="60dp">
+
+            <ImageView
+                android:id="@+id/individu_profic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/man_icon" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profic_area"
+        android:layout_marginBottom="10dp"
+        android:background="@color/blueBasicPale"
+        android:orientation="vertical"
+        android:id="@+id/data_area1">
+
+        <TextView
+            style="@style/LoginScreenText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blueBasicDark"
+            android:padding="10dp"
+            android:text="Data Pokok"
+            android:textColor="@color/blueBasicPale"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/individu_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="ggdz" />
+
+        <TextView
+            android:id="@+id/individu_nipbaru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="1989" />
+
+        <TextView
+            android:id="@+id/individu_unit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="1989" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/data_area1"
+        android:layout_marginBottom="2dp"
+        android:background="@color/blueBasicPale"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/LoginScreenText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blueBasicDark"
+            android:padding="10dp"
+            android:text="Data Pokok"
+            android:textColor="@color/blueBasicPale"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/individu_nama1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="ggdz" />
+
+        <TextView
+            android:id="@+id/individu_nipbaru1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="1989" />
+
+        <TextView
+            android:id="@+id/individu_unit1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="1989" />
+    </LinearLayout>
+</LinearLayout>

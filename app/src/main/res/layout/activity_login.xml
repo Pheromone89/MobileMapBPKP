@@ -25,7 +25,7 @@
         android:gravity="center"
         android:text="@string/login_screen_title"
         android:textColor="@color/blueBasicDark"
-        android:textSize="35sp"/>
+        android:textSize="35sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,14 +57,20 @@
                     android:layout_height="@dimen/login_icon_size"
                     android:src="@drawable/man_icon" />
 
-                <EditText
-                    android:id="@+id/username_input"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/login_icon_size"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:hint="nama pengguna"
-                    android:layout_marginLeft="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/username_input"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/login_icon_size"
+                        android:layout_marginLeft="10dp"
+                        android:ems="10"
+                        android:hint="nama pengguna"
+                        android:inputType="textPersonName"
+                        android:maxLines="1" />
+                </android.support.design.widget.TextInputLayout>
             </LinearLayout>
 
             <LinearLayout
@@ -81,26 +87,31 @@
                     android:layout_height="@dimen/login_icon_size"
                     android:src="@drawable/lock_icon" />
 
-                <EditText
-                    android:id="@+id/password_input"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/login_icon_size"
-                    android:ems="10"
-                    android:inputType="textPassword"
-                    android:hint="kata sandi"
-                    android:layout_marginLeft="10dp"/>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/password_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:ems="10"
+                        android:hint="kata sandi"
+                        android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
             </LinearLayout>
 
             <RelativeLayout
+                android:id="@+id/login_button"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/login_icon_size"
-                android:id="@+id/login_button">
+                android:layout_height="@dimen/login_icon_size">
 
                 <ImageButton
+                    android:id="@+id/login_image_button"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/login_icon_size"
-                    android:background="@color/blueBasicDark"
-                    android:id="@+id/login_image_button"/>
+                    android:background="@color/blueBasicDark" />
 
                 <TextView
                     style="@style/LoginScreenText"
@@ -121,10 +132,11 @@
             android:layout_weight="1" />
 
     </LinearLayout>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="© Septian coolest man ever"
         android:textColor="@android:color/white"
-        android:textSize="10sp"/>
+        android:textSize="10sp" />
 </LinearLayout>
